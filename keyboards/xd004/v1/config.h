@@ -67,7 +67,7 @@ where some things are disabled to save space as well.
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 
 #define RGBLED_NUM 2
-#define RGBLIGHT_HUE_STEP 10
+#define RGBLIGHT_HUE_STEP 5
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
 
