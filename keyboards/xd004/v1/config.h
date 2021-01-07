@@ -60,14 +60,12 @@ where some things are disabled to save space as well.
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
 
-/* RGB Underglow
-This will not be used, as RGBLIGHT_ENABLE is set to 'no' in rules.mk
-We do not have enough space in the flash for this at the moment, maybe
-further optimizations can be done on that side.
-*/
+/* RGB Underglow */
 #define RGB_DI_PIN C6
-#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+
+/* Enable only one RGB effect due to low memory restriction */
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+
 #define RGBLED_NUM 2
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
