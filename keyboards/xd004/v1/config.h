@@ -79,3 +79,7 @@ where some things are disabled to save space as well.
 // The two below are implicit since we use LTO_ENABLE (in rules.mk)
 // #define NO_ACTION_MACRO
 // #define NO_ACTION_FUNCTION
+
+// Disable layers - this saves A LOT of space for other features like "leader" key or underglow feature (disabled in default config)
+#define NO_ACTION_LAYER
+
