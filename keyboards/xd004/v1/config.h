@@ -71,7 +71,10 @@ where some things are disabled to save space as well.
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
 
-/* disable action features */
+// Limit RGB to run LED cooler
+#define RGBLIGHT_LIMIT_VAL 192
+
+/* Disable action features */
 // #define NO_ACTION_ONESHOT // 462 bytes <- this needs to be un-commented out if Link Time Optimization is disabled, otherwise file is too large
 // The two below are implicit since we use LTO_ENABLE (in rules.mk)
 // #define NO_ACTION_MACRO
