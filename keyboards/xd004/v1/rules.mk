@@ -12,9 +12,10 @@ MCU = atmega16u2
 BOOTLOADER = atmel-dfu
 
 # Build Options
-BOOTMAGIC_ENABLE = lite       # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = no # DISABLED because flashing is initialized by hardware switch
+
 MOUSEKEY_ENABLE = no        # Mouse keys
-EXTRAKEY_ENABLE = yes        # Audio control and System control
+EXTRAKEY_ENABLE = yes       # Audio control and System control (4.5% of memory)
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = no            # Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
