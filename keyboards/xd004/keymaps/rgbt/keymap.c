@@ -22,9 +22,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
   switch (keycode) {
     case AC_KEY0:
-      // Send regular F20 keycode (acts as Mic Mute in some Linux DE)
+      // Send space keycode (useful for media players)
       if (record->event.pressed) {
-        tap_code(KC_F20);
+        tap_code(KC_SPACE);
       }
       break;
 
@@ -46,10 +46,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       } else {
         // Determine action on key release depending on timer
         if (timer_elapsed(key_timer) < 200) {
-          // Send "Play/Pause" media key
-          tap_code(KC_MEDIA_PLAY_PAUSE);
+          // Send F20 key
+          tap_code(KC_F20);
         } else {
-          // Send "Mute" media key
+          // Send "Mute" key
           tap_code(KC_MUTE);
         }
       }
